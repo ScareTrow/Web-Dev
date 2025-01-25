@@ -1,0 +1,25 @@
+
+div {
+    width: 100vw;
+    background-color: red;
+}
+
+.div1 {
+    width: 100px;
+    background-color: yellow;
+}
+
+.div2 {
+    width: 200px;
+    background-color: pink;
+}
+
+.div3 {
+    margin: 1em;
+    background-color: cyan;
+}
+
+.div4 {
+    font-size: 2em;
+    background-color: greenyellow;
+}
