@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+        Helvetica, Arial, sans-serif;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    flex-grow: 1;
+    gap: 32px;
+}
+
+.phone-mockup-container {
+    position: relative;
+    width: 468px;
+    height: auto;
+}
+
+.phone-mockup {
+    max-width: 100%;
+    height: auto;
+    position: left;
+    transition: opacity 1s ease-in-out;
+    opacity: 1;
+}
+
+.login-container {
+    max-width: 350px;
+    width: 100%;
+}
+
+.login-box {
+    background-color: #000;
+    border: 1px solid #262626;
+    border-radius: 1px;
+    padding: 20px 40px;
+    margin-bottom: 10px;
+}
+
+.instagram-logo {
+    margin: 36px 0;
+    text-align: center;
+}
+
+.instagram-logo h1 {
+    font-family: "Instagram Sans Script", cursive;
+    font-size: 36px;
+    font-style: italic;
+}
+
+input {
+    width: 100%;
+    background-color: #121212;
+    border: 1px solid #262626;
+    padding: 9px 8px;
+    margin-bottom: 6px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+}
+
+.login-btn {
+    width: 100%;
+    background-color: #0095f6;
+    color: #fff;
+    padding: 7px 16px;
+    border: none;
+    border-radius: 8px;
+    font-weight: 600;
+    margin: 8px 0;
+    cursor: pointer;
+}
+
+.divider {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    color: #737373;
+}
+
+.divider::before,
+.divider::after {
+    content: "";
+    flex: 1;
+    border-bottom: 1px solid #262626;
+}
+
+.divider span {
+    margin: 0 18px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.facebook-login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 8px 0;
+    color: #0095f6;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.forgot-password {
+    text-align: center;
+    color: #e0f1ff;
+    font-size: 12px;
+    margin-top: 12px;
+    text-decoration: none;
+    display: block;
+}
+
+.signup-box {
+    background-color: #000;
+    border: 1px solid #262626;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 10px;
+}
+
+.signup-box p {
+    font-size: 14px;
+    color: #F5F5F5;
+}
+
+.signup-box a {
+    color: #0095f6;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.get-app {
+    text-align: center;
+}
+
+.get-app p {
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+.app-download {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.app-download img {
+    height: 40px;
+}
+
+footer {
+    padding: 24px 0;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 12px;
+    padding: 0 16px;
+}
+
+.footer-links a {
+    color: #737373;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.copyright {
+    color: #737373;
+    font-size: 12px;
+}
+
+@media (max-width: 875px) {
+    .phone-mockup {
+        display: none;
+    }
+}

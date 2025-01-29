@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", system-ui, sans-serif;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    height: 54px;
+    font-size: 13px;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.nav-left {
+    gap: 24px;
+}
+
+.nav-right {
+    margin-left: auto;
+    gap: 16px;
+}
+
+.microsoft-logo {
+    width: 108px;
+    height: 24px;
+}
+
+.nav-link {
+    color: #262626;
+    text-decoration: none;
+    padding: 16px 8px;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.promo-banner {
+    background-color: #0067b8;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.promo-banner a {
+    color: white;
+    text-decoration: none;
+}
+
+.promo-banner a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    background: linear-gradient(135deg, #e6e9ff 0%, #d4e1ff 100%);
+    overflow: hidden;
+    height: 600px;
+}
+
+.hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 48px;
+    max-width: 40%;
+    z-index: 2;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.9) 0%,
+        rgba(255, 255, 255, 0.7) 60%,
+        transparent 100%
+    );
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero picture {
+    height: 100%;
+}
+
+.hero picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    max-width: 600px;
+}
+
+.hero p {
+    font-size: 1.125rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+}
+
+.hero-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #0067b8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 2px;
+}
+
+.hero-button:hover {
+    background: #005da6;
+}
+
+.hero picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.quick-links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    padding: 48px 24px;
+    flex-wrap: wrap;
+}
+
+.quick-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #0067b8;
+    font-weight: 600;
+}
+
+.quick-link img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 8px;
+}
+
+.quick-link:hover {
+    text-decoration: underline;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 24px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.2s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    transform: translateY(-4px);
+}
+
+.card-image {
+    width: 100%;
+    height: 167px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 24px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 4px 8px;
+    background: #ffb900;
+    color: #000;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.card-description {
+    font-size: 15px;
+    color: #4c4c4c;
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.card-button {
+    display: inline-block;
+    padding: 8px 16px;
+    background: #0067b8;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 2px;
+}
+
+.card-button:hover {
+    background: #005da6;
+}
+
+footer {
+    background: #f2f2f2;
+    padding: 48px 0;
+    margin-top: 48px;
+}
+
+.footer-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 24px;
+}
+
+.footer-column h3 {
+    font-size: 15px;
+    margin-bottom: 16px;
+}
+
+.footer-column ul {
+    list-style: none;
+}
+
+.footer-column li {
+    margin-bottom: 12px;
+}
+
+.footer-column a {
+    color: #616161;
+    text-decoration: none;
+    font-size: 11px;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 859px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .nav-bar {
+        padding: 0 12px;
+    }
+
+    .nav-left {
+        gap: 12px;
+    }
+}
