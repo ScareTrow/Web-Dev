@@ -1,155 +1,156 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
-  background-color: #f0f2f5;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+    background-color: #f0f2f5;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .main-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-  min-height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    min-height: 70vh;
 }
 
 .left-section {
-  margin-right: 40px;
-  padding: 20px;
-  max-width: 500px;
+    margin-right: 40px;
+    padding: 20px;
+    max-width: 500px;
 }
 
 .facebook-logo {
-  color: #1877f2;
-  font-size: 4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
+    color: #1877f2;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .tagline {
-  font-size: 1.5rem;
-  color: #1c1e21;
-  line-height: 1.2;
+    font-size: 1.5rem;
+    color: #1c1e21;
+    line-height: 1.2;
 }
 
 .login-container {
-  background-color: white;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  width: 396px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 396px;
 }
 
 input {
-  width: 100%;
-  padding: 14px 16px;
-  border: 1px solid #dddfe2;
-  border-radius: 6px;
-  margin-bottom: 12px;
-  font-size: 1rem;
+    width: 100%;
+    padding: 14px 16px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    margin-bottom: 12px;
+    font-size: 1rem;
 }
 
 .login-btn {
-  background-color: #1877f2;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 12px;
-  font-size: 1.2rem;
-  font-weight: bold;
-  width: 100%;
-  cursor: pointer;
-  margin-bottom: 16px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 16px;
 }
 
 .forgot-password {
-  text-align: center;
-  margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .forgot-password a {
-  color: #1877f2;
-  text-decoration: none;
-  font-size: 0.9rem;
+    color: #1877f2;
+    text-decoration: none;
+    font-size: 0.9rem;
 }
 
 .divider {
-  border-bottom: 1px solid #dadde1;
-  margin: 20px 0;
+    border-bottom: 1px solid #dadde1;
+    margin: 20px 0;
 }
 
 .create-account-btn {
-  background-color: #42b72a;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  padding: 12px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
-  width: fit-content;
-  min-width: 170px;
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+
+    min-width: 170px;
 }
 
 .create-page {
-  text-align: center;
-  margin-top: 28px;
-  font-size: 0.9rem;
+    text-align: center;
+    margin-top: 28px;
+    font-size: 0.9rem;
 }
 
 .create-page a {
-  color: #1c1e21;
-  text-decoration: none;
-  font-weight: bold;
+    color: #1c1e21;
+    text-decoration: none;
+    font-weight: bold;
 }
 
 footer {
-  background-color: white;
-  padding: 20px;
-  margin-top: auto;
+    background-color: white;
+    padding: 20px;
+    margin-top: auto;
 }
 
 .footer-content {
-  max-width: 980px;
-  margin: 0 auto;
+    max-width: 980px;
+    margin: 0 auto;
 }
 
 .language-selector {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  margin-bottom: 10px;
-  font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 10px;
+    font-size: 0.75rem;
 }
 
 .language-selector a {
-  color: #737373;
-  text-decoration: none;
+    color: #737373;
+    text-decoration: none;
 }
 
 .footer-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  font-size: 0.75rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-size: 0.75rem;
 }
 
 .footer-links a {
-  color: #737373;
-  text-decoration: none;
+    color: #737373;
+    text-decoration: none;
 }
 
 .meta-copyright {
-  margin-top: 20px;
-  color: #737373;
-  font-size: 0.75rem;
+    margin-top: 20px;
+    color: #737373;
+    font-size: 0.75rem;
 }

@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.todo-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 370px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 35px;
+}
+
+#todo-form {
+    display: flex;
+    gap: 10px;
+}
+
+#task-input {
+    flex: 1;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+button {
+    padding: 8px;
+    border: none;
+    background: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+button:hover {
+    background: #218838;
+}
+
+#todo-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.todo-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    background: #f9f9f9;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    min-height: 40px;
+    max-width: 100%;
+    justify-content: space-between;
+}
+
+.task-text {
+    flex-grow: 1;
+    display: block;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: normal;
+    padding: 5px;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.todo-item input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+.todo-item.completed .task-text {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.edit-input {
+    font-size: 16px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    outline: none;
+    min-height: 40px;
+}
+
+.edit-btn,
+.delete-btn {
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 4px;
+    min-width: 35px;
+    text-align: center;
+    border: none;
+}
+
+.edit-btn {
+    background: #c7db2e;
+    color: #2b82c5;
+}
+
+.edit-btn:hover {
+    background: #a4db2e;
+}
+
+.delete-btn {
+    background: #dc3545;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+#clear-completed {
+    margin-top: 1px;
+    background: #ff9800;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+#clear-completed:hover {
+    background: #e68900;
+}
