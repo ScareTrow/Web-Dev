@@ -1,0 +1,16 @@
+<div class="categoryrow">
+    <h2>Categories</h2>
+
+    <div class="category-box">
+        <a
+            *ngFor="let category of categories; let last = last"
+            [title]="category.name + ' details'"
+            [routerLink]="['/categories', category.id]"
+            class="category-item"
+            [class.no-border]="last">
+            {{ category.name }}
+        </a>
+    </div>
+
+    <router-outlet></router-outlet>
+</div>

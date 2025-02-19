@@ -1,0 +1,80 @@
+<div class="search-bar">
+  <label for="search">Search by Product Name:</label>
+  <input type="text" id="search" [(ngModel)]="searchInput" />
+</div>
+<app-view-categories></app-view-categories>
+<div class="product-container">
+  <div *ngFor="let product of filteredProducts" class="product-card">
+    <div *ngFor="let image of product.img; let i = index">
+      <img
+        [src]="image"
+        [alt]="product.name"
+        *ngIf="i === product.currentImageIndex"
+      />
+    </div>
+    <div class="button-row">
+      <button type="button" class="image-buttons" (click)="prevImage(product)">
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        >
+          <path
+            d="M2.117 12l7.527 6.235-.644.765-9-7.521 9-7.479.645.764-7.529 6.236h21.884v1h-21.883z"
+          />
+        </svg>
+      </button>
+      <button type="button" class="image-buttons" (click)="nextImage(product)">
+        <svg
+          width="24"
+          height="24"
+          xmlns="http://www.w3.org/2000/svg"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+        >
+          <path
+            d="M21.883 12l-7.527 6.235.644.765 9-7.521-9-7.479-.645.764 7.529 6.236h-21.884v1h21.883z"
+          />
+        </svg>
+      </button>
+    </div>
+    <h3>
+      <a
+        [title]="product.name + ' details'"
+        [routerLink]="['/products', product.id]"
+      >
+        {{ product.name }}
+      </a>
+    </h3>
+    <p *ngIf="product.description">
+      <span>Description: </span>{{ product.description }}
+    </p>
+    <p *ngIf="product.price" class="price">
+      <span>{{ product.price }} </span> ₸
+    </p>
+
+    <ngb-rating
+      [max]="5"
+      [(rate)]="product.rating"
+      [readonly]="false"
+    ></ngb-rating>
+    <div class="button-container button-row">
+      <button type="button" (click)="share(product.name, product.link)">
+        Share with WhatsApp
+      </button>
+      <button type="button" (click)="sharetg(product.name, product.link)">
+        Share with Telegram
+      </button>
+      <app-product-alerts [product]="product" (notify)="onNotify()">
+      </app-product-alerts>
+    </div>
+    <button class="likebtn" type="button" (click)="like(product)">
+      I like this!: {{ product.likes }}
+    </button>
+    <button type="button" class="deletebtn" (click)="delete(product)">
+      Delete
+    </button>
+  </div>
+</div>

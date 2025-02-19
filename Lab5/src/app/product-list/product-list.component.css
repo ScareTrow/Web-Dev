@@ -1,0 +1,128 @@
+.product-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.product-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px 8px;
+  width: calc(33.33% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 8px;
+}
+
+.product-card p {
+  margin-bottom: 12px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+.product-card button {
+  width: 150px;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 8px;
+  margin-bottom: 5px;
+}
+
+.product-card button:hover {
+  background-color: #0056b3;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+ngb-rating {
+  color: yellow;
+  font-size: 20px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.price {
+  font-size: 20px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.gallery-item {
+  margin: 10px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.1);
+}
+
+.image-buttons {
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-bar {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.search-bar input {
+  width: 600px;
+  border-radius: 30px;
+}
+.search-bar label {
+  font-size: 15px;
+  margin-right: 1rem;
+  margin-top: 0.5rem;
+}
+
+.deletebtn {
+  background-color: red !important;
+}
+
+.likebtn {
+  margin-top: 1rem;
+  background-color: green !important;
+}
