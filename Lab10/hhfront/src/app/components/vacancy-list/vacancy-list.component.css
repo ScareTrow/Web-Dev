@@ -1,0 +1,74 @@
+/* Style for the container holding the title and button */
+div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 0 10px;
+}
+
+/* Style for the header */
+h1 {
+    font-size: 24px;
+    color: #333;
+    margin: 0; /* Removes default margin */
+}
+
+/* Style for the button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none; /* Removes the default focus outline */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darkens the button color on hover */
+}
+
+/* Styles for the list */
+ul {
+    list-style: none; /* Removes default list bullets */
+    padding: 0;
+    margin: 0;
+}
+
+/* Styles for each list item */
+ul li {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 5px; /* Adds space between items */
+}
+
+/* Style links to stand out */
+ul li a {
+    color: #007BFF; /* Link color */
+    text-decoration: none; /* Removes underline */
+    font-weight: bold;
+    font-size: 18px;
+}
+
+ul li a:hover {
+    text-decoration: underline; /* Underlines link on hover */
+}
+
+/* Style for descriptions and salary to improve readability */
+ul li {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.4; /* Increases line height for better readability */
+}
+
+/* Style for the horizontal rule to be more subtle */
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #eaeaea;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}

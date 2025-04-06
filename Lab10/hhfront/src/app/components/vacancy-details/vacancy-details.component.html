@@ -1,0 +1,47 @@
+<div class="vacancyform">
+  <div *ngIf="vacancy">
+    <form #vacancyForm="ngForm" (ngSubmit)="updateVacancy()">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        [(ngModel)]="vacancy.name"
+        name="name"
+        required
+      />
+
+      <label for="description">Description:</label>
+      <textarea
+        id="description"
+        [(ngModel)]="vacancy.description"
+        name="description"
+      ></textarea>
+
+      <label for="salary">Salary:</label>
+      <input
+        type="number"
+        id="salary"
+        [(ngModel)]="vacancy.salary"
+        name="salary"
+      />
+
+      <p *ngIf="company">
+        Company:
+        <a [routerLink]="['/companies', vacancy.company_id]">{{
+          company.name
+        }}</a>
+      </p>
+
+      <button
+        type="submit"
+        [disabled]="!vacancyForm.form.valid"
+        class="savebtn"
+      >
+        Save Changes
+      </button>
+      <hr />
+    </form>
+
+    <button (click)="deleteVacancy()" class="deletebtn">Delete Vacancy</button>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div *ngIf="company">
+  <h2>{{ company.name }}</h2>
+  <p>{{ company.description }}</p>
+  <p><strong>City:</strong> {{ company.city }}</p>
+  <p><strong>Address:</strong> {{ company.address }}</p>
+
+  <h3>Vacancies:</h3>
+  <ul *ngIf="vacancies.length > 0">
+    <li *ngFor="let vacancy of vacancies">
+      {{ vacancy.name }} - {{ vacancy.salary | currency : "USD" }}
+      <a [routerLink]="['/vacancies', vacancy.id]">{{ vacancy.name }}</a>
+    </li>
+  </ul>
+  <p *ngIf="vacancies.length === 0">No vacancies available.</p>
+</div>

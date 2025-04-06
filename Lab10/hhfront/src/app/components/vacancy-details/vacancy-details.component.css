@@ -1,0 +1,79 @@
+/* Styles for the entire Vacancy Form container */
+.vacancyform {
+  max-width: 500px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling labels for better readability */
+.vacancyform label {
+  display: block;
+  margin: 10px 0 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Styles for input fields */
+.vacancyform input[type="text"],
+.vacancyform input[type="number"],
+.vacancyform input[type="company"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for textarea */
+.vacancyform textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-height: 100px; /* Minimum height for the textarea */
+  margin-bottom: 10px;
+}
+
+/* Styling buttons */
+.savebtn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.vacancyform:disabled {
+  background-color: #ccc;
+}
+
+/* Additional hover effect for buttons */
+.vacancyform .savebtn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Styling for paragraphs (Company name display) */
+.vacancyform p {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #666;
+}
+
+.deletebtn {
+  background-color: red;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  margin-right: 10px;
+}
+.deletebtn:hover {
+  background-color: rgb(182, 41, 41);
+}

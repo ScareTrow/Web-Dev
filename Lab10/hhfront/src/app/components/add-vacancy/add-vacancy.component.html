@@ -1,0 +1,26 @@
+<div class="vacancy-form">
+    <form (ngSubmit)="onSubmit(vacancyForm)" #vacancyForm="ngForm">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="vacancy.name" name="name" required>
+      </div>
+  
+      <div>
+        <label for="description">Description:</label>
+        <textarea id="description" [(ngModel)]="vacancy.description" name="description" required></textarea>
+      </div>
+  
+      <div>
+        <label for="salary">Salary:</label>
+        <input type="number" id="salary" [(ngModel)]="vacancy.salary" name="salary" required>
+      </div>
+  
+      <div>
+        <label for="companyId">Company ID:</label>
+        <input type="number" id="companyId" [(ngModel)]="vacancy.company_id" name="companyId" required>
+      </div>
+  
+      <button type="submit" [disabled]="!vacancyForm.valid">Add Vacancy</button>
+    </form>
+  </div>
+  
